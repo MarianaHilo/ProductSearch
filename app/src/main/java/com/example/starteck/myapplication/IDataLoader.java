@@ -6,5 +6,5 @@ package com.example.starteck.myapplication;
 
 public interface IDataLoader {
 
-    public String loadDatat();
+    public String loadDatat(String input);
 }

@@ -17,13 +17,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+        <Button
+            android:id="@+id/buttonList"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="Grid" />
+
+        <Button
+            android:id="@+id/buttonGrid"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="List" />
+
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

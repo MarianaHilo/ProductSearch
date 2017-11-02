@@ -8,6 +8,6 @@ import java.util.ArrayList;
 
 public interface IDatafetcher<T> {
 
-    ArrayList<T> fetchData();
+    ArrayList<T> fetchData(String input);
 
 }

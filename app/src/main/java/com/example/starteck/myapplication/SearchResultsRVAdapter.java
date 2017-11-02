@@ -19,14 +19,22 @@ import static com.example.starteck.myapplication.R.id.imageView;
 
 public class SearchResultsRVAdapter extends RecyclerView.Adapter<SearchResultsRVAdapter.ViewHolder> {
     private ArrayList<Product> products;
+    private String layoutType;
 
-    public SearchResultsRVAdapter(ArrayList<Product> data) {
+    public SearchResultsRVAdapter(ArrayList<Product> data, String layoutType) {
         this.products = data;
+        this.layoutType= layoutType;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View root = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
+        View root;
+        if(layoutType.equals("list") ) {
+            root = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
+        }else{
+            root = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_view, parent, false);
+
+        }
         ViewHolder vholder = new ViewHolder(root);
         return vholder;    }
 

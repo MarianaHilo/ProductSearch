@@ -22,8 +22,9 @@ public class ProductDataFetcher implements IDatafetcher<Product> {
     }
 
     @Override
-    public ArrayList<Product> fetchData() {
-        String data = dataLoader.loadDatat();
+    public ArrayList<Product> fetchData(String input) {
+        String data = dataLoader.loadDatat(input);
+
        return  parser.ParseData(data);
     }
 }

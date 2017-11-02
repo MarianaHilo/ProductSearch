@@ -18,11 +18,11 @@ class DataLoaderFromResource implements IDataLoader {
 
 
     @Override
-    public String loadDatat() {
-        return loadJSONFromAsset();
+    public String loadDatat(String input) {
+        return loadJSONFromAsset(input);
     }
 
-    public String loadJSONFromAsset() {
+    public String loadJSONFromAsset(String input) {
 
         String json = null;
         try {
